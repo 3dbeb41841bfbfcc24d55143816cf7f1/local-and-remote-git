@@ -121,8 +121,7 @@ Commit the changes:
 * stage
 * git repository (.git)
 
-[diagram1](http://thkoch2001.github.io/whygitisbetter/images/index1.png)
-[diagram2](http://i.stack.imgur.com/YSVtk.png)
+![git status lifecyle](url-goes-here)
 
 ### Code Along Part 4 - More commits, viewing the history
 
