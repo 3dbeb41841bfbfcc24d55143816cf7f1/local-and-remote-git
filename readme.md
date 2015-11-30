@@ -121,7 +121,7 @@ Commit the changes:
 * stage
 * git repository (.git)
 
-![git status lifecyle](url-goes-here)
+![git status lifecyle](https://raw.githubusercontent.com/ATL-WDI-Curriculum/local-and-remote-git/master/images/git-status-lifecycle.png)
 
 ### Code Along Part 4 - More commits, viewing the history
 
