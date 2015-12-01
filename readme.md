@@ -72,30 +72,48 @@ programs, web sites, and other collections of information.
 
 Check the GIT Version:
 
-    $ which git
-    $ git --version
+```bash
+$ which git
+$ git --version
+```
+
+If you don't have git installed via brew, you should do so now:
+
+```bash
+brew install git            # use brew to install latest version of git
+which git                   # should return "/usr/local/bin/git"
+```
 
 Check your GIT Config:
 
-    $ git config --list
-    $ git config user.name
+```bash
+$ git config --list
+$ git config user.name
+```
 
 Set your identity:
 
-    $ git config --global user.name "John Doe"
-    $ git config --global user.email johndoe@example.com
+```bash
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
 
 Set your default editor:
 
-    $ git config --global core.editor "subl -n -w"
+```bash
+$ git config --global core.editor "subl -n -w"
+```
 
 ### Code Along Part 2 - Creating a repo
 
 Create a new local GIT repository:
-    $ cd ~/wdi/projects/git
-    $ mkdir sample1
-    $ cd sample1
-    $ git init
+
+```bash
+$ cd ~/ga/wdi/exercises/learning-git
+$ mkdir sample1
+$ cd sample1
+$ git init
+```
 
 * What just happened?
 * Did your Shell Prompt change?
@@ -103,18 +121,24 @@ Create a new local GIT repository:
 ### Code Along Part 3 - Our first commit
 
 Add some files:
-    $ touch README.md hello.rb
-    $ git status
-    # What is an untracked file?
 
-    $ git add .
-    $ git status
-    # Now the files are in the stage
+```bash
+$ touch README.md hello.txt
+$ git status
+# What is an untracked file?
+
+$ git add -A
+$ git status
+# Now the files are in the stage
+```
 
 Commit the changes:
-    $ git commit -m "Added 2 files."
-    $ git status
-    $ git log
+
+```bash
+$ git commit -m "Added 2 files."
+$ git status
+$ git log
+```
 
 ##### On the whiteboard, draw a diagram of the following:
 * working area
@@ -125,25 +149,27 @@ Commit the changes:
 
 ### Code Along Part 4 - More commits, viewing the history
 
-Edit hello.rb and commit changes:
+Edit hello.txt and commit changes:
 
-    # Modify a file
-    $ echo "puts 'Hello, World'" >> hello.rb
-    $ git status
-    # We now see a "modified" file, but nothing is staged.
+```bash
+# Modify a file
+$ echo "Hello, World" >> hello.txt
+$ git status
+# We now see a "modified" file, but nothing is staged.
 
-    # Let's add our changes to the stage
-    $ git add .
-    $ git status
+# Let's add our changes to the stage
+$ git add .
+$ git status
 
-    # Now our changes are staged and we can do a commit
-    $ git commit -m "Fixed hello.rb"
+# Now our changes are staged and we can do a commit
+$ git commit -m "Fixed hello.txt"
 
-    # Let's view the repo history
-    $ git log
+# Let's view the repo history
+$ git log
 
-    # Notice all of the info in the log
-    # In what order are the commits displayed?
+# Notice all of the info in the log
+# In what order are the commits displayed?
+```
 
 ## Code Challenge - Make additional changes and commits
 
@@ -167,8 +193,8 @@ Demo the editing of multiple files but only adding one of them to the stage
 ### Code Along Part 6 - Checking out a Previous Version
 
     $ git log
-    $ git checkout hash_of_previous_commit
-    $ cat hello.rb
+    $ git checkout <hash_of_previous_commit>
+    $ cat hello.txt
     # We see the old version
 
     # Let's look at the history
@@ -183,7 +209,7 @@ Demo the editing of multiple files but only adding one of them to the stage
     # We have a few ways to do this:
     $ git checkout master
         or
-    $ git checkout hash_of_most_recent_commit
+    $ git checkout <hash_of_most_recent_commit | master>
 
 ### Code Along Part 7 - Diffing
 
@@ -236,7 +262,7 @@ Demo the editing of multiple files but only adding one of them to the stage
   * b. the .git directory
   * c. the working area
 
-4. What command would you use to add the changes to the file "hello.rb" to the stage?
+4. What command would you use to add the changes to the file "hello.txt" to the stage?
 
 5. What GIT command is used to load a previous revision into the working area?
 
@@ -245,5 +271,5 @@ Demo the editing of multiple files but only adding one of them to the stage
 1. init
 2. (c) the working area
 3. (a) the stage
-4. git add hello.rb
+4. git add hello.txt
 5. checkout
