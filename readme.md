@@ -240,14 +240,6 @@ Demo the editing of multiple files but only adding one of them to the stage
 * Can someone describe an important GIT command (get several responses from
   students)
 
-## Q & A
-
-## Homework
-
-* There is no homework for this lesson. Students will soon be using GIT and
-  GitHub to submit their homework thus giving them plenty of experience with
-  GIT.
-
 ## Quiz
 
 1. What is the GIT command for creating a new database from the terminal?
@@ -273,3 +265,7 @@ Demo the editing of multiple files but only adding one of them to the stage
 3. (a) the stage
 4. git add hello.txt
 5. checkout
+
+## GIT Cheatsheet
+
+![git status lifecyle](https://raw.githubusercontent.com/ATL-WDI-Curriculum/local-and-remote-git/master/images/Git-Cheat-Sheet.png)
