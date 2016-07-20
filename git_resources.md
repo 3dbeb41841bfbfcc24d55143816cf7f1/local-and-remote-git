@@ -7,4 +7,3 @@
 - [Visual Interactive Cheatsheet](http://ndpsoftware.com/git-cheatsheet.html#loc=workspace;)
 - [GIT Immersion](http://gitimmersion.com/)
 - [Git - The Simple Guide](http://rogerdudler.github.io/git-guide/)
-I

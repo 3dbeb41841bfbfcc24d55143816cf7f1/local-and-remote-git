@@ -3,7 +3,7 @@
 
 ## Learning Objectives - IWBAT
 ### Concepts
-* Explain what Version Control is
+* Explain the purpose of Version Control
 * List the problems that Version Control solves
 * List the main components of a git repository and how they relate:
     - repository
@@ -19,6 +19,8 @@
 * View the history of a git repository
 * Checkout an old version of the repo
 
+---
+
 ## Why Version Control?
 
 ### Pair & Share
@@ -26,10 +28,12 @@
   Assuming that version control systems did not exist, how would you:
     - Share your source code with other developers?
     - Collaborate with other developers
-    - Support multiple versions of a software product?
+    - Manage multiple versions of a software product?
         - Free vs. Paid
         - Basic vs. Premium
         - 2.x vs. 3.x
+
+---
 
 ## What is Version Control?
 * _Version Control_ is the management of changes to documents, computer
@@ -54,6 +58,8 @@ programs, web sites, and other collections of information.
 * Experimentation
     - Experiment with various ideas and either keep or discard your experiments.
     - Keep multiple changes isolated until they are ready to be integrated.
+
+---
 
 ## Code Along
 (about 40 minutes)
@@ -171,6 +177,8 @@ $ git log
 # In what order are the commits displayed?
 ```
 
+---
+
 ## Code Challenge - Make additional changes and commits
 
 * Check your status and history as you go
@@ -185,53 +193,76 @@ Instructor Demos Solution
 
 Demo the editing of multiple files but only adding one of them to the stage
 
-    $ git add file1
-    $ git commit
-    $ git status
-    $ git log
+```bash
+git add file1
+git commit
+git status
+git log
+```
 
 ### Code Along Part 6 - Checking out a Previous Version
 
-    $ git log
-    $ git checkout <hash_of_previous_commit>
-    $ cat hello.txt
-    # We see the old version
+```bash
+git log
+git checkout <hash_of_previous_commit>
+cat hello.txt
+# We see the old version
 
-    # Let's look at the history
-    $ git log
-    # By default the log command only shows up to the current commit we are on
+# Let's look at the history
+git log
+# By default the log command only shows up to the current commit we are on
 
-    # Let's see all of the commits
-    $ git log --all --decorate
-    # What is HEAD and master?
+# Let's see all of the commits
+git log --all --decorate
+# What is HEAD and master?
 
-    # Now let's get back to the most recent version
-    # We have a few ways to do this:
-    $ git checkout master
-        or
-    $ git checkout <hash_of_most_recent_commit | master>
+# Now let's get back to the most recent version
+# We have a few ways to do this:
+git checkout master
+# or
+git checkout <hash_of_most_recent_commit>
+```
 
 ### Code Along Part 7 - Diffing
 
-    # View unstaged differences
-    $ git diff
-        or
-    $ git diff filename
+```bash
+# View unstaged differences
+git diff
+# or
+git diff filename
 
-    # View staged differences
-    $ git diff --staged
-        or
-    $ git diff --staged filename
+# View staged differences
+git diff --staged
+# or
+git diff --staged filename
+```
 
 ### Code Along Part 8 - Rolling back changes
 
-    # unstage changes to a file
-    $ git reset filename
-    $ git status
+```bash
+# unstage changes to a file
+git reset filename
+git status
 
-    # Discarding changes (reverting to the committed version)
-    $ git checkout filename
-    $ git status
+# Discarding changes (reverting to the committed version)
+git checkout filename
+git status
+```
+
+---
+
+## GIT Terminology
+
+* **repository** - a collection of related commits that form a directed acyclic graph
+* **commit** - a snapshot of the working tree at a giving time (along with a message of what changed)
+* **the index (stage)** - a staging area where we list changes we want to commit
+* **branch** - a set of commits that form a linear progression of changes
+* **master** - the default name for the "main" development branch
+* **tag** - an optional label on a commit
+* **HEAD** - what is currently checked out
+* **working area** - the directory and subdirectories containing the files we are currently working on
+
+---
 
 ## Review
 
@@ -239,6 +270,8 @@ Demo the editing of multiple files but only adding one of them to the stage
 * What are some key components of a GIT repo?
 * Can someone describe an important GIT command (get several responses from
   students)
+
+---
 
 ## Quiz
 
@@ -265,6 +298,8 @@ Demo the editing of multiple files but only adding one of them to the stage
 3. (a) the stage
 4. git add hello.txt
 5. checkout
+
+---
 
 ## GIT Cheatsheet
 
