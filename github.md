@@ -1,4 +1,18 @@
-# Intro to GitHub
+# Intro to GitHub and Remote GIT Repositories
+
+In this lesson we will be learning about how _GIT_ remote repositories work.
+
+## Learning Objectives
+
+* Explain the difference between a _local_ and a _remote_ Git repository
+* Be able to `clone`, `push`, `pull`, and `fetch` remote repositories.
+* Be able to configure a _local_ Git repository to track a _remote_ repository.
+
+## What is a Remote Repository
+
+A remote repository is simply a GIT repository that is located on a remote server (for example a GitHub server). Git provides us with special commands for reading, copying, and updating a remote repository.
+
+![Basic Remote Workflow](images/basic-remote-workflow.png)
 
 ## What is GitHub
 
