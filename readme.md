@@ -148,17 +148,22 @@ $ git status
 $ git log
 ```
 
+---
+
 ##### On the whiteboard, draw a diagram of the following:
 * working area
 * stage
 * git repository (.git)
 
-![file status lifecycle](images/file-status-lifecycle.jpg)
+## File Status Lifecycle
 
+![file status lifecycle](images/file-status-lifecycle.png)
 
 ## Basic Git Workflow
+
 ![git status lifecyle](images/git-status-lifecycle.png)
 
+---
 
 ### Code Along Part 4 - More commits, viewing the history
 
