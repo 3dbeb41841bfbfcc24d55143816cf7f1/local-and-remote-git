@@ -1,6 +1,8 @@
 # Introduction to Version Control with GIT
 (90 minutes)
 
+![GIT Logo](images/git-logo.jpg)
+
 ## Learning Objectives - IWBAT
 ### Concepts
 * Explain the purpose of Version Control
