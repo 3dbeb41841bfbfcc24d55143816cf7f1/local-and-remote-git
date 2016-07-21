@@ -151,7 +151,12 @@ $ git log
 * stage
 * git repository (.git)
 
-![git status lifecyle](https://raw.githubusercontent.com/ATL-WDI-Curriculum/local-and-remote-git/master/images/git-status-lifecycle.png)
+![file status lifecycle](images/file-status-lifecycle.jpg)
+
+
+## Basic Git Workflow
+![git status lifecyle](images/git-status-lifecycle.png)
+
 
 ### Code Along Part 4 - More commits, viewing the history
 
