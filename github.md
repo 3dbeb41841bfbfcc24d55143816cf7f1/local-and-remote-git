@@ -12,6 +12,10 @@ In this lesson we will be learning about how _GIT_ remote repositories work.
 
 A remote repository is simply a GIT repository that is located on a remote server (for example a GitHub server). Git provides us with special commands for reading, copying, and updating a remote repository.
 
+![Distributed Version Control](images/distributed-version-control.png)
+
+---
+
 ![Basic Remote Workflow](images/basic-remote-workflow.png)
 
 ## What is GitHub

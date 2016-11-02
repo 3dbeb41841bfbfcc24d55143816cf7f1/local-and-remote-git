@@ -305,13 +305,18 @@ git status
 
 5. What GIT command is used to load a previous revision into the working area?
 
-### Quiz Answers
-
+<details>
+  <summary><strong>Quiz Answers</strong></summary>
 1. init
+<br>
 2. (c) the working area
+<br>
 3. (a) the stage
+<br>
 4. git add hello.txt
+<br>
 5. checkout
+</details>
 
 ---
 
