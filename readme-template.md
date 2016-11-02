@@ -1,43 +1,9 @@
-<!--
-This file is auto-generated from a 'template.md'
-file using the 'md-process' script.
-Therefore *DO NOT* edit this file directly!
-Instead edit the template file and then run 'md-process'.
--->
-
 # Introduction to Version Control with GIT
 (90 minutes)
 
 ![GIT Logo](images/git-logo.jpg)
 
-## Table of Contents
-
-* [Learning Objectives - IWBAT](#learning-objectives---iwbat)
-  * [Concepts](#concepts)
-  * [Skills](#skills)
-* [Why Version Control?](#why-version-control)
-  * [Pair & Share](#pair-&-share)
-* [What is Version Control?](#what-is-version-control)
-* [What is Version Control Good For?](#what-is-version-control-good-for)
-* [Code Along](#code-along)
-  * [Agenda](#agenda)
-  * [Code Along Part 1 - Setup](#code-along-part-1---setup)
-  * [Code Along Part 2 - Creating a repo](#code-along-part-2---creating-a-repo)
-  * [Code Along Part 3 - Our first commit](#code-along-part-3---our-first-commit)
-      * [On the whiteboard, draw a diagram of the following:](#on-the-whiteboard-draw-a-diagram-of-the-following)
-* [File Status Lifecycle](#file-status-lifecycle)
-* [Basic Git Workflow](#basic-git-workflow)
-  * [Code Along Part 4 - More commits, viewing the history](#code-along-part-4---more-commits-viewing-the-history)
-* [Code Challenge - Make additional changes and commits](#code-challenge---make-additional-changes-and-commits)
-  * [Code Along Part 5 - Cherry Picking](#code-along-part-5---cherry-picking)
-  * [Code Along Part 6 - Checking out a Previous Version](#code-along-part-6---checking-out-a-previous-version)
-  * [Code Along Part 7 - Diffing](#code-along-part-7---diffing)
-  * [Code Along Part 8 - Rolling back changes](#code-along-part-8---rolling-back-changes)
-* [GIT Terminology](#git-terminology)
-* [Review](#review)
-* [Quiz](#quiz)
-  * [Quiz Answers](#quiz-answers)
-* [GIT Cheatsheet](#git-cheatsheet)
+{{TOC}}
 
 ## Learning Objectives - IWBAT
 ### Concepts
