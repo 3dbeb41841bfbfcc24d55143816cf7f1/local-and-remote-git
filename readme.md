@@ -19,14 +19,15 @@ Instead edit the template file and then run 'md-process'.
   * [Pair & Share](#pair-&-share)
 * [What is Version Control?](#what-is-version-control)
 * [What is Version Control Good For?](#what-is-version-control-good-for)
+  * [What if you could live your life using a Version Control System?](#what-if-you-could-live-your-life-using-a-version-control-system)
 * [Code Along](#code-along)
   * [Agenda](#agenda)
   * [Code Along Part 1 - Setup](#code-along-part-1---setup)
   * [Code Along Part 2 - Creating a repo](#code-along-part-2---creating-a-repo)
   * [Code Along Part 3 - Our first commit](#code-along-part-3---our-first-commit)
-      * [On the whiteboard, draw a diagram of the following:](#on-the-whiteboard-draw-a-diagram-of-the-following)
+* [Basic Git Concepts](#basic-git-concepts)
+  * [Basic Git Workflow](#basic-git-workflow)
 * [File Status Lifecycle](#file-status-lifecycle)
-* [Basic Git Workflow](#basic-git-workflow)
   * [Code Along Part 4 - More commits, viewing the history](#code-along-part-4---more-commits-viewing-the-history)
 * [Code Challenge - Make additional changes and commits](#code-challenge---make-additional-changes-and-commits)
   * [Code Along Part 5 - Cherry Picking](#code-along-part-5---cherry-picking)
@@ -36,7 +37,6 @@ Instead edit the template file and then run 'md-process'.
 * [GIT Terminology](#git-terminology)
 * [Review](#review)
 * [Quiz](#quiz)
-  * [Quiz Answers](#quiz-answers)
 * [GIT Cheatsheet](#git-cheatsheet)
 
 ## Learning Objectives - IWBAT
@@ -63,7 +63,7 @@ Instead edit the template file and then run 'md-process'.
 
 ### Pair & Share
 * Spend a few minutes discussing the following questions:
-  Assuming that version control systems did not exist, how would you:
+  Assuming that version control systems do not exist, how would you:
     - Share your source code with other developers?
     - Collaborate with other developers
     - Manage multiple versions of a software product?
@@ -74,8 +74,7 @@ Instead edit the template file and then run 'md-process'.
 ---
 
 ## What is Version Control?
-* _Version Control_ is the management of changes to documents, computer
-programs, web sites, and other collections of information.
+* _Version Control_ is the management of changes to documents, computer programs, web sites, and other collections of information.
 
 * _Version Control_ provides:
     - a database containing a history of changes to a set of files
@@ -90,12 +89,18 @@ programs, web sites, and other collections of information.
 * Sharing & Collaboration
     - Share your work with others.
     - Work effectively as a team on a single project.
-    - Allow others to modify your work in a controlled way.
+    - Allow others to modify your work in a _controlled_ way.
     - Make multiple changes to a project in parallel.
     - Merge parallel changes in a controlled way.
 * Experimentation
     - Experiment with various ideas and either keep or discard your experiments.
     - Keep multiple changes isolated until they are ready to be integrated.
+
+### What if you could live your life using a Version Control System?
+
+* Should I go back to school or move to Europe?
+* Should I date person X or person Y?
+* Should I try to make it big as a professional Rock star?
 
 ---
 
@@ -186,18 +191,32 @@ $ git log
 
 ---
 
-##### On the whiteboard, draw a diagram of the following:
-* working area
-* stage
-* git repository (.git)
+## Basic Git Concepts
+
+Your Git managed files exist in the following places:
+
+* the __Working Area__
+* the __Stage__
+* the _local_ Git __Repository__ (.git)
+* (optional) a remote Git __Repository__ (such as GitHub)
+
+
+### Basic Git Workflow
+
+![git status lifecyle](images/git-status-lifecycle.png)
+
+---
 
 ## File Status Lifecycle
 
+Files can be _untracked_ or _tracked_.
+
+* _untracked_: Git is not tracking any changes to the file. The file is being _ignored_ by Git.
+* _tracked_: Git is tracking changes to the file (Git saves each set of changes in a commit).
+
+A file is moved from an _untracked_ state to a _tracked_ state by adding it to the stage and then _committing_ the stage.
+
 ![file status lifecycle](images/file-status-lifecycle.png)
-
-## Basic Git Workflow
-
-![git status lifecyle](images/git-status-lifecycle.png)
 
 ---
 
@@ -339,13 +358,18 @@ git status
 
 5. What GIT command is used to load a previous revision into the working area?
 
-### Quiz Answers
-
+<details>
+  <summary><strong>Quiz Answers</strong></summary>
 1. init
+<br>
 2. (c) the working area
+<br>
 3. (a) the stage
+<br>
 4. git add hello.txt
+<br>
 5. checkout
+</details>
 
 ---
 
