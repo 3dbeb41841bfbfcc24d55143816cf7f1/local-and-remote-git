@@ -190,5 +190,6 @@ Solution for greeting with time:
   <br>
   A:
     git checkout master
+    <br>
     git merge ask_user
 </details>
