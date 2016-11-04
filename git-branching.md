@@ -212,7 +212,7 @@ Solution for greeting with time:
 <details>
   <summary>4. If you are currently working in the ask_user branch, what command(s) would you use to merge the "ask_user" branch into the master branch?</summary>
   <br>
-  A:
+  A:<br>
     git checkout master
     <br>
     git merge ask_user
