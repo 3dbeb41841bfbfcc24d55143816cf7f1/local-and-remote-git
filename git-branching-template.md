@@ -1,31 +1,7 @@
-<!--
-This file is auto-generated from a 'template.md'
-file using the 'md-process' script.
-Therefore *DO NOT* edit this file directly!
-Instead edit the template file and then run 'md-process'.
--->
-
 # Branching with GIT
 (60 minutes)
 
-## Table of Contents
-
-* [Learning Objectives](#learning-objectives)
-  * [Concepts](#concepts)
-  * [Skills](#skills)
-* [What is Branching](#what-is-branching)
-* [Code Along Part 1 - Create a branch and commit to it](#code-along-part-1---create-a-branch-and-commit-to-it)
-  * [Ask class: How do we save this change as a commit?](#ask-class-how-do-we-save-this-change-as-a-commit)
-* [Code Along Part 2 - Add a new file to branch](#code-along-part-2---add-a-new-file-to-branch)
-* [Code Along Part 3 - Switch to master and then back to branch](#code-along-part-3---switch-to-master-and-then-back-to-branch)
-* [Code Along Part 4 - Merge branch into master](#code-along-part-4---merge-branch-into-master)
-* [Short Lab - Create Another Branch](#short-lab---create-another-branch)
-* [Review Lab](#review-lab)
-* [Final Thoughts](#final-thoughts)
-* [Review](#review)
-* [Q & A](#q-&-a)
-* [Homework](#homework)
-* [Quiz](#quiz)
+{{TOC}}
 
 ## Learning Objectives
 
